@@ -1,1 +1,11 @@
-aa{}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #eee;
+}
+
+/* 画像のフルード化 */
+img{
+  max-width: 100%;
+  height: auto;/* セットで指定 */
+}
