@@ -180,8 +180,28 @@ a:hover {
 /*----------------------------------------
 	footer
 ----------------------------------------*/
-
-
+.footer{
+  padding: 0 20px;
+  background: #333;
+  color: #fff;
+}
+.footer__menu > li{
+  border-bottom: 1px solid #707070;
+}
+.footer__menu a{
+  display: block;
+  padding: 1em 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.footer__copyright{
+  text-align: center;
+  padding: 40px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
 /*----------------------------------------
 	container
 ----------------------------------------*/
@@ -216,7 +236,37 @@ a:hover {
 /*----------------------------------------
 	button
 ----------------------------------------*/
+.centerButton{
+  max-width: 400px;
+  margin: 20px auto;
+}
 .buttonM{
   display: block;
-
+  text-align: center;
+  border: 2px solid #37952F;
+  background: #37952F;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 15px;
+  transition: color .3s, background-color .3s;
+}
+.buttonL{
+  display: block;
+  padding: 20px;
+  border: 2px solid #37952F;
+  background: #fff;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  transition: color .3s, background-color .3s;
+}
+.buttonM:hover{
+  background: #fff;
+  color: #37952F;
+}
+.buttonL:hover{
+  background: #37952F;
+  color: #fff;
 }

@@ -23,7 +23,7 @@
 }
 .mainVisual__catch{
 	margin-top: 20px;
-	font-style: 20px;
+	font-size: 20px;
 	font-weight: bold;
 	line-height: 2;
 }
@@ -39,8 +39,8 @@
 .serviceList__item{
 	max-width: 400px;
 	margin: 20px auto 0;
-	background: #fff;
 	box-shadow: 0 0 6px rgb(0, 0, 0 / 10%);
+	background: #fff;
 }
 .serviceList__thumb img{
 	max-width: none;
@@ -63,3 +63,40 @@
 
 /* pickupList
 ----------------------------------------*/
+.pickupList{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: -20px;
+}
+.pickupList__item{
+	width: calc((100% - 15px) / 2);
+	margin-top: 20px;
+}
+.pickupList__item a{
+	color: inherit;
+	font-weight: bold;
+	text-decoration: none;
+}
+.pickupList__thumb{
+	max-width: none;
+	width: 100%;
+}
+.pickupList__title{
+	position: relative;
+	margin-top: 1em;
+	padding-left: 1em;
+	font-size: 14px;
+	line-height: 1.28;
+}
+.pickupList__title::before{
+	position: absolute;
+	left: 0;
+	top: .4em;
+	content: "";
+	width: .6em;
+	height: .6em;
+	border-top: 2px solid;
+	border-right: 2px solid;
+	transform: rotate(45deg);
+}
