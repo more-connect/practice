@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/*----------------------------------------
+	TOPページ専用
+----------------------------------------*/
+.mainContents{
+	margin-top: 50px;
+}
+
+/* mainVisual
+----------------------------------------*/
+.mainVisual{
+	background: #37952F;
+	color: #fff;
+}
+.mainVisual__inner{
+	display: flex;
+	flex-direction: column-reverse;
+	padding: 20px;
+}
+.mainVisual__image{
+	text-align: center;
+}
+.mainVisual__catch{
+	margin-top: 20px;
+	font-style: 20px;
+	font-weight: bold;
+	line-height: 2;
+}
+
+
+/* serviceList
+----------------------------------------*/
+.serviceList{
+	display: flex;
+	flex-direction: column;
+	margin-top: -20px;
+}
+.serviceList__item{
+	max-width: 400px;
+	margin: 20px auto 0;
+	background: #fff;
+	box-shadow: 0 0 6px rgb(0, 0, 0 / 10%);
+}
+.serviceList__thumb img{
+	max-width: none;
+	width: 100%;
+}
+.serviceList__data{
+	margin: 20px;
+}
+.serviceList__data dt{
+	font-weight: bold;
+	font-size: 20px;
+}
+.serviceList__data dd{
+	margin-top: 10px;
+	line-height: 1.875;
+}
+.serviceList__btn{
+	margin: 20px;
+}
+
+/* pickupList
+----------------------------------------*/

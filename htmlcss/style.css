@@ -231,3 +231,24 @@ main {
     width: calc((100% - 60px) / 4);
   }
 }
+
+/*マークアップ要素の状態を把握しやすくするための仮スタイル*/
+.btns {
+  display: flex;
+  justify-content: center;
+	background: #e7e7e7;
+}
+.btns__item {
+	margin: 10px;
+  width: 80%;
+  max-width: 300px;
+	border: 1px dashed #999;
+}
+.btn {
+  display: block;
+  padding: 15px;
+	background: skyblue;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+}
