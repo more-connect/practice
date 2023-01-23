@@ -126,6 +126,7 @@ a:hover {
   margin-left: 20px;
 }
 
+
 /*----------------------------------------
 	hamburger
 ----------------------------------------*/
@@ -202,6 +203,14 @@ a:hover {
   font-size: 14px;
   font-weight: bold;
 }
+@media screen and (min-width: 768px), print  {
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+  }
+}
 /*----------------------------------------
 	container
 ----------------------------------------*/
@@ -226,6 +235,12 @@ a:hover {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: .2em;
+}
+@media screen and (min-width: 768px), print  {
+  .headingL{
+    margin-bottom: 40px;
+    font-size: 48px;
+  }
 }
 
 /*----------------------------------------

@@ -27,6 +27,30 @@
 	font-weight: bold;
 	line-height: 2;
 }
+@media screen and (min-width: 768px), print  {
+	.mainVisual{
+		padding: 40px 0;
+	}
+	.mainVisual__inner{
+		flex-direction: row;
+		max-width: 1080px;
+		padding: 20px;
+		margin: auto;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.mainVisual__catch{
+		display: flex;
+		justify-content: center;
+		font-size: min(3.33vw, 36px);
+		padding: 0 8.3333%;
+	}
+	.mainVisual__image{
+		flex-shrink: 0;
+		width: 40%;
+	}
+
+}
 
 
 /* serviceList
@@ -59,6 +83,16 @@
 }
 .serviceList__btn{
 	margin: 20px;
+}
+@media screen and (min-width: 768px), print  {
+	.serviceList{
+		flex-direction: row;
+	}
+	.serviceList__item{
+		display: flex;
+		flex-direction: column;
+		width: calc((100% - 40px) / 3);
+	}
 }
 
 /* pickupList
