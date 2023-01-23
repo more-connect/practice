@@ -203,12 +203,27 @@ a:hover {
   font-size: 14px;
   font-weight: bold;
 }
+
 @media screen and (min-width: 768px), print  {
   .footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
+  }
+  .footer__menu {
+    border-right: 1px solid #707070;
+  }
+  .footer__menu > li {
+    display: inline-block;
+    border-left: 1px solid #707070;
+    border-bottom: 0;
+  }
+  .footer__menu  a {
+    padding: 0 1em;
+  }
+  .footer__menu a:hover {
+    text-decoration: underline;
   }
 }
 /*----------------------------------------
@@ -254,6 +269,11 @@ a:hover {
 .centerButton{
   max-width: 400px;
   margin: 20px auto;
+}
+@media screen and (min-width:768px),print {
+  .centerButton {
+    margin: 40px auto;
+  }
 }
 .buttonM{
   display: block;

@@ -63,7 +63,7 @@
 .serviceList__item{
 	max-width: 400px;
 	margin: 20px auto 0;
-	box-shadow: 0 0 6px rgb(0, 0, 0 / 10%);
+	box-shadow: 0 0 6px rgb(0, 0, 0, .1);
 	background: #fff;
 }
 .serviceList__thumb img{
@@ -87,12 +87,16 @@
 @media screen and (min-width: 768px), print  {
 	.serviceList{
 		flex-direction: row;
+		justify-content: space-between;
 	}
 	.serviceList__item{
-		display: flex;
-		flex-direction: column;
+    display: flex;
+    flex-direction: column; /*ボタン位置を下端に揃えるために縦軸に変更*/
 		width: calc((100% - 40px) / 3);
 	}
+	.serviceList__btn {
+    margin-top: auto; /*カード內でボタン位置を下端に揃える*/
+  }
 }
 
 /* pickupList
